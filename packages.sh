@@ -19,9 +19,8 @@ printf "✅ pacman package manager updated and configured$endline"
 
 # Install AUR helper and Flatpak
 sudo pacman -S git
-git clone https://archlinux.org/yay.git $yay_directory
+git clone https://aur.archlinux.org/yay.git $yay_directory
 cd "$yay_directory"
-ls
 makepkg -si
 cd "$HOME"
 sudo pacman -S flatpak
