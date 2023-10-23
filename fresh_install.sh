@@ -9,4 +9,4 @@ chmod +x git_config.sh
 ./git_config.sh
 
 # Success notification
-echo "🎉 Fresh Install Completed"
+printf "🎉 Fresh Install Completed\n"
