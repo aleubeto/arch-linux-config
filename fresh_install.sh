@@ -1,8 +1,7 @@
 #!/bin/bash
 
-endline="\n\n"
-
 # Grant execution permissions
+chmod +x helpers.sh
 chmod +x packages.sh
 chmod +x git_config.sh
 chmod +x system.sh
@@ -17,4 +16,5 @@ chmod +x terminal.sh
 ./terminal.sh
 
 # Success notification
-printf "🎉 Fresh Install Completed$endline"
+source helpers.sh
+notification "🎉 Fresh Install Completed"
