@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Path variables
 pacman_mirrorlist = "/etc/pacman.d/mirrorlist"
 

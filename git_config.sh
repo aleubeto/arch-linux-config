@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Git config variables
 read -p "git user.name: " git_user_name
 read -p "git user.email: " git_user_email
