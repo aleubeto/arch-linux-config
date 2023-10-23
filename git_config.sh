@@ -4,7 +4,6 @@ endline="\n\n"
 
 # Install git
 printf "🔃 GIT CONFIGURATION$endline"
-sudo pacman -S git
 
 # Git config variables
 read -p "git user.name: " git_user_name
