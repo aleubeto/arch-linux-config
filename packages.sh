@@ -6,8 +6,11 @@ endline="\n\n"
 pacman_mirrorlist="/etc/pacman.d/mirrorlist"
 yay_directory="$HOME/Downloads/yay"
 
-# Actualización inicial
+# Update keyring
 printf "🔃 PACMAN CONFIGURATION$endline"
+sudo pacman -S archlinux-keyring
+sudo pacman-key --refresh
+printf "✅ Keyring updated$endline"
 sudo pacman -Syu
 
 # Configure and Speed Up Pacman
