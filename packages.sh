@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path variables
-pacman_mirrorlist = "/etc/pacman.d/mirrorlist"
+pacman_mirrorlist="/etc/pacman.d/mirrorlist"
 
 # Actualización inicial
 sudo pacman -Syu
