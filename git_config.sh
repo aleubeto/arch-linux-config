@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install git
+sudo pacman -S git
+
 # Git config variables
 printf "🔃 GIT CONFIGURATION\n"
 read -p "git user.name: " git_user_name
