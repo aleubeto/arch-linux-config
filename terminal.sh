@@ -12,3 +12,7 @@ notification "✅ nvchad successfully installed"
 
 # Install other utilities
 sudo pacman -S tree
+sudo pacman -S xclip
+
+# Custom alias
+echo "alias ssh=cat ~/.ssh/id_rsa.pub | xclip -selection clipboard" >> ~/.bashrc
