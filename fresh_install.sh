@@ -22,7 +22,7 @@ source helpers.sh
 notification "🎉 Fresh Install Completed"
 
 # Reboot system
-reboot=confirm "🚀 Reboot system"
-if $reboot; then
-  sudo reboot
+shtdwn=confirm "🚀 Shutdown system"
+if $shtdwn; then
+  sudo shutdown -h now
 fi

@@ -3,7 +3,7 @@
 source helpers.sh
 
 notification "🔃 INSTALLING ADITTIONAL SOFTWARE"
-sudo snap install nordpass
-sudo snap install godot --classic
+sudo snap install nordpass --stable
+sudo snap install godot --stable
 
 notification "✅ adittional programs installed"
