@@ -26,4 +26,3 @@ reboot=confirm "🚀 Reboot system"
 if $reboot; then
   sudo reboot
 fi
-

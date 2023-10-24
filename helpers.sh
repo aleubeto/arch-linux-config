@@ -21,4 +21,3 @@ confirm() {
     esac
   done
 }
-

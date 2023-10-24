@@ -3,6 +3,7 @@
 source helpers.sh
 
 # Get additional kernels
+notification "🔃 UPDATING SYSTEM"
 sudo pacman -S linux-lts linux-lts-headers
 notification "✅ linux-lts kernel installed and configured"
 
