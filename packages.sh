@@ -10,8 +10,6 @@ snap_directory="$HOME/Downloads/snap"
 # Update keyring
 notification "🔃 PACMAN CONFIGURATION"
 sudo pacman -S archlinux-keyring
-sudo pacman-key --refresh
-notification "✅ Keyring updated"
 sudo pacman -Syu
 
 # Configure and Speed Up Pacman
