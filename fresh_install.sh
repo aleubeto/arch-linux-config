@@ -21,8 +21,8 @@ chmod +x keyring_recovery.sh
 source helpers.sh
 notification "🎉 Fresh Install Completed"
 
-# Reboot system
-shtdwn=confirm "🚀 Shutdown system"
-if $shtdwn; then
+# Shutdown system
+if confirm "🚀 Shutdown system required"; then
+  notification "...Shutting system down"
   sudo shutdown -h now
 fi

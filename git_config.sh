@@ -15,6 +15,7 @@ read -p "git default branch name: " git_default_branch_name
 git config --global user.name "$git_user_name"
 git config --global user.email "$git_user_email"
 git config --global init.defaultBranch "$git_default_branch_name"
+git config pull.rebase false
 notification "✅ git global variables successfully configured"
 
 # Create new SSH keys
