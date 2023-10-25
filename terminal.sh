@@ -15,4 +15,4 @@ sudo pacman -S tree
 sudo pacman -S xclip
 
 # Custom alias
-echo "alias ssh='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.bashrc
+echo "alias ssh_keys='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.bashrc
