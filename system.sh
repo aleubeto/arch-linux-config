@@ -12,3 +12,6 @@ sudo pacman -S ufw
 sudo systemctl enable ufw
 sudo systemctl start ufw
 notification "✅ Firewall installed and configured"
+
+# Dark Adwaita theme
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
