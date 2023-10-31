@@ -16,3 +16,6 @@ sudo pacman -S xclip
 
 # Custom alias
 echo "alias ssh_keys='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.bashrc
+echo "alias venv='python -m venv venv; cat "✅ Successfully created virtual environment"'" >> ~/.bashrc
+echo "alias activate='source venv/bin/activate'" >> ~/.bashrc
+
