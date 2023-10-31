@@ -10,3 +10,9 @@ sudo snap install nordpass
 sudo snap install godot --classic
 
 notification "✅ adittional programs installed"
+
+# Dark Adwaita theme
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+notification "✅ dark theme configured"
