@@ -6,6 +6,7 @@ notification "🔃 INSTALLING ADITTIONAL SOFTWARE"
 
 # Aplications
 sudo snap install nordpass
+snap connect nordpass:password-manager-service
 sudo snap install code --classic
 sudo snap install slack
 sudo snap install godot --classic
