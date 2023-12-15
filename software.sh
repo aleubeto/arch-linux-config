@@ -4,15 +4,14 @@ source helpers.sh
 
 notification "🔃 INSTALLING ADITTIONAL SOFTWARE"
 
-yay -S gnome-browser-connector
-yay -S visual-studio-code-bin
+# Aplications
 sudo snap install nordpass
+sudo snap install code --classic
+sudo snap install slack --classic
 sudo snap install godot --classic
 
+# Comands
+sudo apt install tree
+sudo apt install xclip
+
 notification "✅ adittional programs installed"
-
-# Dark Adwaita theme
-gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-
-notification "✅ dark theme configured"

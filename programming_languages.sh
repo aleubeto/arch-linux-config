@@ -5,4 +5,4 @@ source helpers.sh
 notification "🔃 PROGRAMMING LANGUAGES CONFIGURATION"
 
 # Install programming languages
-sudo pacman -S jdk-openjdk
+sudo apt install jdk-openjdk    # Java

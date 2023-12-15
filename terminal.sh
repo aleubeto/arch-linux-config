@@ -2,20 +2,34 @@
 
 source helpers.sh
 
+# Install Tilix
+sudo apt install tilix
+sudo update-alternatives --config x-terminal-emulator
+notification "✅ tilix terminal successfully installed"
+
+# Install Zhell
+sudo apt install zsh
+chsh -s $(which zsh)
+notification "✅ zshell successfully installed and configurate"
+
+# Install Oh my Zsh and powerlevel10k
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+notification "✅ Oh my Zsh and powerlevel10k successfully installed"
+
 # Install neovim
 notification "🔃 NEOVIM CONFIGURATION"
-sudo pacman -S neovim
+sudo apt install neovim
+notification "✅ neovim successfully installed"
 
 # Install and configure nvchad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 notification "✅ nvchad successfully installed"
 
-# Install other utilities
-sudo pacman -S tree
-sudo pacman -S xclip
-
 # Custom alias
-echo "alias ssh_keys='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.bashrc
-echo "alias venv='python -m venv venv; cat "✅ Successfully created virtual environment"'" >> ~/.bashrc
-echo "alias activate='source venv/bin/activate'" >> ~/.bashrc
+echo "alias ssh_keys='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.zshrc
+echo "alias venv='python -m venv venv; cat "✅ Successfully created virtual environment"'" >> ~/.zshrc
+echo "alias activate='source venv/bin/activate'" >> ~/.zshrc
+notification "✅ alias created successfully"
 

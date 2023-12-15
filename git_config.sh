@@ -4,7 +4,7 @@ source helpers.sh
 
 # Install git
 notification "🔃 GIT CONFIGURATION"
-sudo pacman -S git
+sudo apt install git
 
 # Git config variables
 read -p "git user.name: " git_user_name
