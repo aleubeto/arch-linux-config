@@ -28,8 +28,8 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 notification "✅ nvchad successfully installed"
 
 # Custom alias
+echo "alias update='sudo apt update; sudo apt upgrade; sudo snap refresh'" >> ~/.zshrc
 echo "alias ssh_keys='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'" >> ~/.zshrc
 echo "alias venv='python -m venv venv; cat "✅ Successfully created virtual environment"'" >> ~/.zshrc
 echo "alias activate='source venv/bin/activate'" >> ~/.zshrc
 notification "✅ alias created successfully"
-
