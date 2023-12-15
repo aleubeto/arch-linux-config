@@ -4,5 +4,6 @@ source helpers.sh
 
 notification "🔃 PROGRAMMING LANGUAGES CONFIGURATION"
 
-# Install programming languages
-sudo apt install jdk-openjdk    # Java
+# Java
+sudo apt install default-jre
+sudo apt install default-jdk
