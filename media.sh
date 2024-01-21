@@ -4,10 +4,8 @@ source helpers.sh
 
 # Path variables
 wallpapers="$HOME/Pictures/wallpapers"
-wave_wallpaper="$wallpapers/nordic-wallpapers/wallpapers/ign_vaporWave.png"
 fonts="./media/fonts"
 icons="$HOME/Pictures/icons"
-profile_icon="$icons/tom_nook.jpg"
 
 notification "🔃 CONFIGURATING ADITTIONAL MEDIA"
 
